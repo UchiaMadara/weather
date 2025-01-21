@@ -2,11 +2,31 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!--below is the code that makes your app adjust to the screen size (laptop/phone ect)-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
-    <title>Country Info</title>
+    <title>Weather app</title>
   </head>
   <body>
+    <div id="main">
+      <div id="search">
+        <input type="text" id="input" placeholder="Please enter location" />
+        <button id="btn">Search</button>
+      </div>
+
+      <div id="display">
+        <h3 id="location"></h3>
+        <div id="current-temp"></div>
+        <h5 id="current-condition"></h5>
+        <div id="high-low">
+          <div id="high"></div>
+          <div id="low"></div>
+        </div>
+        <div id="5day">
+          <h6>5-DAY FORECAST</h6>
+        </div>
+      </div>
+    </div>
     <script src="main.js"></script>
   </body>
 </html>
