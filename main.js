@@ -1,8 +1,9 @@
 const weather = async () => {
   try {
     const url = await fetch(
-      "https://api.open-meteo.com/v1/forecast?latitude=52.52&longitude=13.41&current=temperature_2m,wind_speed_10m&hourly=temperature_2m,relative_humidity_2m,wind_speed_10m"
+      "https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=a766f589d3657ac549d890a87051ab5a"
     );
+
     const data = await url.json();
     console.log(data);
   } catch {}
