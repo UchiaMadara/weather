@@ -8,25 +8,42 @@
     <title>Weather app</title>
   </head>
   <body>
-    <div id="main">
+    <div id="weather-app">
       <div id="search">
-        <input type="text" id="input" placeholder="Please enter location" />
-        <button id="btn">Search</button>
+        <input
+          type="text"
+          id="input"
+          placeholder="Please enter location"
+          spellcheck="false"
+        />
+        <button id="btn"><img id="img" src="./images/search.png" /></button>
       </div>
 
       <div id="display">
-        <h3 id="location"></h3>
-        <div id="current-temp"></div>
-        <h5 id="current-condition"></h5>
-        <div id="high-low">
-          <div id="high"></div>
-          <div id="low"></div>
+        <img id="weather-icon" src="images/clear.png" />
+        <h2 id="temp">40°C</h1>
+          <h1 id="location">Location</h1>
+        <div id="hum-wind">
+          <div id="col">
+            <img src="images/humidity.png" />
+            <div>
+              <p class="humidity">50%</p>
+              <p>humidity</p>
+            </div>
+            
+          </div>
+          <div id="col">
+            <img src="images/wind.png" />
+            <div>
+              <p class="wind">15 km/h</p>
+              <p>Wind Speed</p>
+            </div>
+            
+          </div>
         </div>
-        <div id="5day">
-          <h6>5-DAY FORECAST</h6>
-        </div>
+      
       </div>
+      <script src="main.js"></script>
     </div>
-    <script src="main.js"></script>
   </body>
 </html>
